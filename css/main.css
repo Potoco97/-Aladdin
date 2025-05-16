@@ -3,19 +3,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 ul, ol {
   list-style: none;
 }
 
-a {
+.top a {
   text-decoration: none;
   color: #fff;
 }
 
-.search {
+.searchcing input {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search a {
   color: #33afe9;
+}
+
+.searchcing a li:nth-of-type(1) {
+  color: #999999;
+  font-size: 10px;
+}
+
+.search a:nth-of-type(4) {
+  color: #ffffff;
+  background-color: #33afe9;
+  float: left;
+}
+
+.bottomleft a {
+  text-decoration: none;
+  color: #257fa8;
+}
+
+.bottomleft li:nth-of-type(2) {
+  color: #8f2323;
 }
 
 body {
@@ -24,9 +50,8 @@ body {
 
 .container {
   width: 1030px;
-  height: 100%;
+  height: 60%;
   margin: 0 auto;
-  background-color: skyblue;
 }
 
 header {
@@ -39,35 +64,55 @@ header {
   width: 100%;
   height: 38px;
   background-color: #33afe9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .top .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 700;
 }
 .top .mainmanu {
-  width: 55%;
+  width: 52%;
   height: 100%;
   margin-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 80%;
+  font-size: 75%;
 }
 .top .member {
-  width: 30%;
+  width: 25%;
   height: 100%;
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 50%;
+  font-size: 20%;
 }
 
 .container img {
-  width: 20%;
-  margin: 10px;
-  float: left;
+  width: 200px;
+  float: right;
+}
+
+.container:nth-of-type(2) {
+  height: 90px;
+  margin-top: 5px;
+}
+
+.advertisement img {
+  width: 150px;
+  margin-left: 80px;
+}
+
+.searchcing {
+  display: flex;
+  align-items: center;
+  font-size: 50%;
+  color: #999;
 }
 
 .search {
@@ -78,26 +123,109 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
   border: #2fa0d4 solid;
-  border-width: 4px;
+  border-width: 3px;
   border-radius: 20px;
   font-weight: 900;
-  font-size: 80%;
+  font-size: 170%;
+  color: #2fa0d4;
+}
+.search input {
+  width: 60%;
+  border: none;
 }
 
-.search li:nth-of-type(2) {
+.bottom {
+  width: 100%;
+  height: 20%;
+  margin-top: -7px;
+  border: #2fa0d4 solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.bottom .bottomleft {
+  width: 50%;
+  height: 10px;
+  font-size: 11px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom .bottomright {
+  width: 15%;
+  height: 10px;
+  font-size: 12px;
+  margin-right: 10px;
+  float: right;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search li:nth-of-type(3) {
-  font-size: 120%;
-  background-color: #2fa0d4;
+#mainWindow {
+  width: 100%;
+  height: 7000px;
+  margin-top: -4px;
+  overflow: hidden;
+  background-color: rgb(255, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mainWindow .container {
+  width: 1030px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+#mainWindow .mWslide {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  background-color: #d4eaff;
+  border: #d4eaff solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+#mainWindow .mWslide .mWSbook {
+  width: 300%;
+  height: 375px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border: #d4eaff solid;
+  border-radius: 10px;
+  position: relative;
+}
+#mainWindow .mWslide .mWSbook li {
+  width: 33.3%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#mainWindow .mWslide .mWSbook li img {
+  width: 170px;
+}
+#mainWindow .mWSBbook {
+  width: 100%;
+  height: 75px;
 }
 
 footer {
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: pink;
 }
