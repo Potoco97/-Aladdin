@@ -93,9 +93,8 @@ header {
   font-size: 20%;
 }
 
-.container img {
+.container .logo {
   width: 200px;
-  float: right;
 }
 
 .container:nth-of-type(2) {
@@ -193,7 +192,7 @@ header {
 }
 #mainWindow .mWslide {
   width: 100%;
-  height: 450px;
+  height: 430px;
   overflow: hidden;
   background-color: #d4eaff;
   border: #d4eaff solid;
@@ -208,6 +207,18 @@ header {
   border: #d4eaff solid;
   border-radius: 10px;
   position: relative;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+#mainWindow .mWslide .mWSbook a {
+  color: #000;
+}
+#mainWindow .mWslide .mWSbook h5 {
+  font-size: 12px;
+}
+#mainWindow .mWslide .mWSbook p:nth-of-type(1) {
+  color: #2fa0d4;
 }
 #mainWindow .mWslide .mWSbook li {
   width: 33.3%;
@@ -215,6 +226,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 35px;
 }
 #mainWindow .mWslide .mWSbook li img {
   width: 170px;
