@@ -48,19 +48,17 @@ async function bookData() {
 
 async function mWSbook() {
     try {
-        const querys = ['경제', '레시피', '한강'];
+        const querys = ['경제', '레시피', '베스트셀러', '성경', '요리', '모바일', '세일', '어린이'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
 
-            //썸네일이 빈 문자열인것은 제외
             const origin = data.documents;
             let book = origin.filter((val) => {
                 return val.thumbnail != '' && val.contents != '';
             })
 
-            // for문 (4개)
-            for (let j=0; j<4; j++) {
+            for (let j = 0; j < 4; j++) {
                 $('.mWSbook li').eq(i).append(`
                     <div class="box">
                         <img src="${book[j].thumbnail}">
@@ -75,5 +73,29 @@ async function mWSbook() {
     }
 }
 
+$(document).ready(function () {
+    let index
+
+    $('.tab_menu').click(function () {
+        index = $(this).index();
+        $('.mWSbook li').eq(index).fadeIn().siblings().hide();
+
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+});
+
+$(document).ready(function () {
+    let index
+
+    $('.tab1_menu').click(function () {
+        index = $(this).index();
+        $('.tab1_sub').eq(index).show().siblings().hide();
+
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+});
+
 
 mWSbook();
+

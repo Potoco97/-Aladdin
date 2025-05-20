@@ -199,8 +199,42 @@ header {
   border-width: 1px;
   border-radius: 10px;
 }
+#mainWindow .mWslide #notice {
+  width: 100% px;
+  height: 10px;
+  margin: 10px;
+  margin-left: 40px;
+}
+#mainWindow .mWslide #notice ul {
+  background-color: #d4eaff;
+  width: 100%;
+}
+#mainWindow .mWslide #notice li {
+  float: left;
+  width: 110px;
+  height: 30px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+}
+#mainWindow .mWslide #notice .tab_list {
+  float: left;
+  width: 280px;
+  height: 150px;
+}
+#mainWindow .mWslide .active {
+  background-color: #4982ce;
+  color: #fff;
+}
+#mainWindow .mWslide .tab_sub:not(:first-of-type) {
+  display: none;
+}
 #mainWindow .mWslide .mWSbook {
-  width: 300%;
+  width: 100%;
   height: 375px;
   background-color: #ffffff;
   overflow: hidden;
@@ -221,12 +255,15 @@ header {
   color: #2fa0d4;
 }
 #mainWindow .mWslide .mWSbook li {
-  width: 33.3%;
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 35px;
+}
+#mainWindow .mWslide .mWSbook li:hover {
+  cursor: pointer;
 }
 #mainWindow .mWslide .mWSbook li img {
   width: 170px;
@@ -234,6 +271,54 @@ header {
 #mainWindow .mWSBbook {
   width: 100%;
   height: 75px;
+}
+
+#notice1 {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+#notice1 ul {
+  width: 55%;
+  height: 37px;
+  background-color: #eee;
+}
+
+#notice1 li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: left;
+  width: 20%;
+  height: 37px;
+  cursor: pointer;
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+#notice1 .tab1_list {
+  float: left;
+  width: 70%;
+  height: 330px;
+  border-top: 2px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.active {
+  background-color: #fff;
+  font-weight: bold;
+  border: solid #dadada 1px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
+.tab1_sub:not(:first-of-type) {
+  display: none;
 }
 
 footer {
