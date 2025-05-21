@@ -266,43 +266,58 @@ header {
     margin-top: 20px;
 }
 #notice1 ul {
-    width: 55%;
+    width: 70%;
     height:37px; 
-    background-color: #eee; 
+    // background-color: #ffffff; 
+    font-size: 10px;
 }
+
 #notice1 li {
     display: flex;
     justify-content: space-around;
     align-items: center;
     float: left; 
-    width:20%;
+    width:15%;
     height:37px; 
     cursor:pointer;
     padding-top:7px;
-    font-size: 14px; 
+    font-size: 13px; 
+    background-color: none;
+    border: solid #d1d1d1 2px;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    margin-left: 5px;
 }
 
 #notice1 .tab1_list {
     float: left;
-    width:70%; 
+    width:65%; 
     height:330px; 
-    border-top: 2px solid #ddd; 
-    border-left: 1px solid #ddd; 
-    border-bottom: 1px solid #ddd; 
-    border-right: 1px solid #ddd; 
+    border-top: 1px solid #ddd;  
     padding:10px; 
+    
 }
 
 .active {
-    background-color: #fff; 
     font-weight: bold;
-    border: solid #dadada 1px;
-    border-radius: 10px 10px 0 0;
-    border-bottom: none;
+    background-color: #ffffff;
 }
-.tab1_sub:not(:first-of-type) {
+
+#tab1_sub:not(:first-of-type) {
     display:none;
 }
+
+#notice2{
+        width: 100%;
+        height: 375px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+
 
 
 // 푸터
