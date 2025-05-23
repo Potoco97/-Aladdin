@@ -84,6 +84,7 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
     let index
 
@@ -97,5 +98,81 @@ $(document).ready(function () {
 });
 
 
+async function notice() {
+    try {
+        const querys = ['추천', '자기계발', '영문판', '어린이', '건강'];
+
+        querys.forEach(async (query, i) => {
+            const data = await fetchBooks(query);
+
+            const origin = data.documents;
+            let book = origin.filter((val) => {
+                return val.thumbnail != '' && val.contents != '';
+            })
+
+            for (let j = 0; j < 4; j++) {
+                $('.tab1_list .tab1_sub').eq(i).append(`
+                    <div class="box">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
+                `);
+            }
+        })
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
+
+$(document).ready(function () {
+    let index
+
+    $('.tab_menu').click(function () {
+        index = $(this).index();
+        $('.notice1k li').eq(index).fadeIn().siblings().hide();
+
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+});
+
+
+$(document).ready(function () {
+    let index
+
+    $('.tab1_menu').click(function () {
+        index = $(this).index();
+        $('.tab1_sub').eq(index).show().css("display","flex").siblings().hide();
+
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+});
+
+async function hanSlide() {
+    try {
+        const querys = ['추천', '자기계발', '영문판', '어린이', '건강'];
+
+        querys.forEach(async (query, i) => {
+            const data = await fetchBooks(query);
+
+            const origin = data.documents;
+            let book = origin.filter((val) => {
+                return val.thumbnail != '' && val.contents != '';
+            })
+
+                $('.hanSlide li .hanSlide1').eq(i).append(`
+                        <img src="${book[0].thumbnail}">
+                        <h5>${book[0].title}</h5>
+                        <p>${book[0].authors[0]}</p>
+                `);
+            })
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
+
+
 mWSbook();
+notice();
 
