@@ -149,30 +149,86 @@ $(document).ready(function () {
 
 });
 
+// 첫번째 슬라이드 한강작가
+
 async function hanSlide() {
     try {
-        const querys = ['추천', '자기계발', '영문판', '어린이', '건강'];
-
-        querys.forEach(async (query, i) => {
-            const data = await fetchBooks(query);
-
-            const origin = data.documents;
-            let book = origin.filter((val) => {
-                return val.thumbnail != '' && val.contents != '';
-            })
-
-                $('.hanSlide li .hanSlide1').eq(i).append(`
-                        <img src="${book[0].thumbnail}">
-                        <h5>${book[0].title}</h5>
-                        <p>${book[0].authors[0]}</p>
+        const data = await fetchBooks('한강');
+        
+        const origin = data.documents;
+        let book = origin.filter((val) => {
+            return val.thumbnail != '' && val.contents != '';
+        })
+console.log(book)
+        for (let j = 0; j < 5; j++) {
+            $('.han_list').append(`
+                    <div class="han_sub">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
                 `);
-            })
+        }
+
     } catch (error) {
         console.log('에러발생', error);
     }
 }
 
+// 두번째 슬라이드 마법사의이야기
+
+async function magicSlide() {
+    try {
+        const data = await fetchBooks('장편소설');
+        
+        const origin = data.documents;
+        let book = origin.filter((val) => {
+            return val.thumbnail != '' && val.contents != '';
+        })
+console.log(book)
+        for (let j = 0; j < 5; j++) {
+            $('.magic_list').append(`
+                    <div class="magic_sub">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
+                `);
+        }
+
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
+
+// 화제의 책
+
+async function fierSlide() {
+    try {
+        const data = await fetchBooks('장편소설');
+        
+        const origin = data.documents;
+        let book = origin.filter((val) => {
+            return val.thumbnail != '' && val.contents != '';
+        })
+console.log(book)
+        for (let j = 0; j < 3; j++) {
+            $('.fier_list').append(`
+                    <div class="fier_sub">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
+                `);
+        }
+
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
 
 mWSbook();
 notice();
-
+hanSlide();
+magicSlide();
+fierSlide();

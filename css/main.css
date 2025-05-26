@@ -343,35 +343,85 @@ header {
   height: 70%;
 }
 
-.Newmainmenu {
+#hanSlide .han_list {
   width: 100%;
-  height: 300px;
-  float: left;
-  font-family: none;
-}
-
-.Newmainmenu h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.Newmainmenu ul {
-  border-bottom: 1px solid #c0c0c0;
-  width: 25%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 400px;
+  padding: 10px;
+  font-size: 19px;
+  float: left;
+  cursor: pointer;
 }
 
-.hanSlide {
+.han_list h3 {
   width: 100%;
-  height: 375px;
-  background-color: #a3a3a3;
-  overflow: hidden;
-  position: relative;
-  font-size: 10px;
-  text-align: center;
-  line-height: 20px;
+  cursor: pointer;
+}
+
+.han_sub {
+  width: 17%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+#magicSlide .magic_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 400px;
+  padding: 10px;
+  font-size: 19px;
+  float: left;
+  cursor: pointer;
+}
+
+.magic_list h3 {
+  width: 100%;
+  cursor: pointer;
+}
+
+.magic_sub {
+  width: 17%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+#fierSlide .fier_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 400px;
+  padding: 10px;
+  font-size: 19px;
+  float: left;
+  cursor: pointer;
+}
+
+.fier_list h3 {
+  width: 100%;
+  cursor: pointer;
+}
+
+.fier_sub {
+  width: 25%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 13px;
 }
 
 footer {
