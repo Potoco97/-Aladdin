@@ -148,7 +148,7 @@ header {
 
 #mainWindow {
     width: 100%;
-    height: 3000px;
+    height: 3150px;
     margin-top: -4px;
     overflow: hidden;
     background-color: rgb(255, 225, 225);
@@ -354,10 +354,10 @@ header {
     cursor: pointer;
 }
 
-.han_list h3{
+.han_list h3 {
     width: 100%;
     cursor: pointer;
-} 
+}
 
 .han_sub {
     width: 17%;
@@ -381,10 +381,10 @@ header {
     cursor: pointer;
 }
 
-.magic_list h3{
+.magic_list h3 {
     width: 100%;
     cursor: pointer;
-} 
+}
 
 
 .magic_sub {
@@ -402,6 +402,44 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 300px;
+    padding: 10px;
+    font-size: 19px;
+    // float: left;
+    cursor: pointer;
+}
+
+.fier_list h3 {
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.fier_sub {
+    width: 20%;
+    // height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 13px;
+    text-align: start;
+}
+
+.fier_sub h5 {
+    width: 100px;
+    text-align: start;
+}
+
+.fier_sub p {
+    width: 10px;
+    text-align: start;
+}
+
+#mangSlide .mang_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 30px;
     height: 400px;
     padding: 10px;
@@ -410,25 +448,80 @@ header {
     cursor: pointer;
 }
 
-.fier_list h3{
+.mang_list h3 {
     width: 100%;
     cursor: pointer;
-} 
+}
 
 
-.fier_sub {
-    width: 25%;
+.mang_sub {
+    width: 17%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.hirinbox {
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: space-between;
-    flex-direction:row;
+    align-items: center;
+}
+
+.hirinbox ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hirinbox li {
+    width: 30%;
+}
+
+#lastSlide .last_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    padding: 10px;
+    font-size: 19px;
+    float: left;
+    cursor: pointer;
+}
+
+.last_list h3 {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.last_sub {
+    width: 17%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     font-size: 13px;
 }
+
 
 
 // 푸터
 footer {
     width: 100%;
-    height: 100px;
+    height: 300px;
     background-color: pink;
+
+    .container {
+        width: 100%;
+        border-top: solid #999;
+        border-bottom: solid #999;
+        border-width: 1px;
+    }
+
 }

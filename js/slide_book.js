@@ -142,7 +142,7 @@ $(document).ready(function () {
 
     $('.tab1_menu').click(function () {
         index = $(this).index();
-        $('.tab1_sub').eq(index).show().css("display","flex").siblings().hide();
+        $('.tab1_sub').eq(index).show().css("display", "flex").siblings().hide();
 
         $(this).addClass("active").siblings().removeClass("active");
     });
@@ -154,12 +154,12 @@ $(document).ready(function () {
 async function hanSlide() {
     try {
         const data = await fetchBooks('한강');
-        
+
         const origin = data.documents;
         let book = origin.filter((val) => {
             return val.thumbnail != '' && val.contents != '';
         })
-console.log(book)
+        console.log(book)
         for (let j = 0; j < 5; j++) {
             $('.han_list').append(`
                     <div class="han_sub">
@@ -180,12 +180,12 @@ console.log(book)
 async function magicSlide() {
     try {
         const data = await fetchBooks('장편소설');
-        
+
         const origin = data.documents;
         let book = origin.filter((val) => {
             return val.thumbnail != '' && val.contents != '';
         })
-console.log(book)
+        console.log(book)
         for (let j = 0; j < 5; j++) {
             $('.magic_list').append(`
                     <div class="magic_sub">
@@ -205,16 +205,65 @@ console.log(book)
 
 async function fierSlide() {
     try {
-        const data = await fetchBooks('장편소설');
-        
+        const data = await fetchBooks('화제');
+
         const origin = data.documents;
         let book = origin.filter((val) => {
             return val.thumbnail != '' && val.contents != '';
         })
-console.log(book)
+        console.log(book)
         for (let j = 0; j < 3; j++) {
             $('.fier_list').append(`
                     <div class="fier_sub">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
+                `);
+        }
+
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
+
+async function mangSlide() {
+    try {
+        const data = await fetchBooks('투자');
+
+        const origin = data.documents;
+        let book = origin.filter((val) => {
+            return val.thumbnail != '' && val.contents != '';
+        })
+        console.log(book)
+        for (let j = 0; j < 5; j++) {
+            $('.mang_list').append(`
+                    <div class="mang_sub">
+                        <img src="${book[j].thumbnail}">
+                        <h5>${book[j].title}</h5>
+                        <p>${book[j].authors[0]}</p>
+                    </div>
+                `);
+        }
+
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+}
+
+
+async function lastSlide() {
+    try {
+        const data = await fetchBooks('스페셜');
+
+        const origin = data.documents;
+        let book = origin.filter((val) => {
+            return val.thumbnail != '' && val.contents != '';
+        })
+        console.log(book)
+        for (let j = 0; j < 5; j++) {
+            $('.last_list').append(`
+                    <div class="last_sub">
                         <img src="${book[j].thumbnail}">
                         <h5>${book[j].title}</h5>
                         <p>${book[j].authors[0]}</p>
@@ -232,3 +281,5 @@ notice();
 hanSlide();
 magicSlide();
 fierSlide();
+mangSlide();
+lastSlide();
