@@ -7,10 +7,8 @@ body {
 }
 
 .container {
-    width: 1030px;
     height: 60%;
-    margin: 0 auto;
-    // background-color: skyblue;
+    margin: auto;
 }
 
 header {
@@ -32,6 +30,7 @@ header {
         justify-content: space-between;
         align-items: center;
         font-weight: 700;
+        margin: none;
     }
 
     .mainmanu {
@@ -40,10 +39,11 @@ header {
         margin-left: 10px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         font-size: 75%;
     }
 
+    
     .member {
         width: 25%;
         height: 100%;
@@ -56,31 +56,29 @@ header {
 
 }
 
-.container .logo {
-    width: 200px;
-}
-
-.container:nth-of-type(2) {
-    height: 90px;
-    margin-top: 5px;
-}
-
 .advertisement img {
     width: 150px;
-    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .searchcing {
+    width: 90%;
     display: flex;
-
-
     align-items: center;
-    font-size: 50%;
     color: #999;
+    font-size: 30%;
+}
+
+
+.searchcing a{
+    width: 11%;
 }
 
 .search {
-    width: 50%;
+    width: 100%;
     height: 40px;
     padding-left: 15px;
     padding-right: 15px;
@@ -92,12 +90,12 @@ header {
     border-width: 3px;
     border-radius: 20px;
     font-weight: 900;
-    font-size: 170%;
-    color: #2fa0d4;
+    font-size: 11px;
 
     input {
         width: 60%;
         border: none;
+        // font-size: 10%
     }
 }
 
@@ -123,7 +121,7 @@ header {
     }
 
     .bottomleft {
-        width: 50%;
+        width: 60%;
         height: 10px;
         font-size: 11px;
         margin-left: 10px;
@@ -151,7 +149,7 @@ header {
     height: 3150px;
     margin-top: -4px;
     overflow: hidden;
-    background-color: rgb(255, 225, 225);
+    // background-color: rgb(255, 225, 225);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,7 +267,7 @@ header {
 
 #notice1 {
     width: 100%;
-    height: 250px;
+    height: 330px;
     margin: 10px;
     margin-top: 20px;
 }
@@ -277,7 +275,6 @@ header {
 #notice1 ul {
     width: 70%;
     height: 37px;
-    // background-color: #ffffff; 
     font-size: 10px;
 }
 
@@ -311,6 +308,13 @@ header {
     border: solid 1px #dadada
 }
 
+.not {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .active {
     font-weight: bold;
     background-color: #ffffff;
@@ -320,9 +324,9 @@ header {
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
 
     &:not(:first-of-type) {
@@ -341,8 +345,9 @@ header {
     }
 }
 
+// 한강, 신작 출간 추천도서
 #hanSlide .han_list {
-    width: 100%;
+    width: 1020px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -350,7 +355,7 @@ header {
     height: 400px;
     padding: 10px;
     font-size: 19px;
-    float: left;
+    // float: left;
     cursor: pointer;
 }
 
@@ -369,12 +374,12 @@ header {
 }
 
 #magicSlide .magic_list {
-    width: 100%;
+    width: 1020px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 30px;
-    height: 400px;
+    height: 320px;
     padding: 10px;
     font-size: 19px;
     float: left;
@@ -398,45 +403,34 @@ header {
 
 // 화제의 책
 #fierSlide .fier_list {
-    width: 100%;
+    width: 1020px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 300px;
     padding: 10px;
     font-size: 19px;
-    // float: left;
-    cursor: pointer;
 }
+
+#fierSlide {}
 
 .fier_list h3 {
     width: 100%;
-    height: 10%;
-    cursor: pointer;
+    height: 20%;
+
 }
 
-.fier_sub {
-    width: 20%;
-    // height: 300px;
+.fier_sub h5{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    font-size: 13px;
-    text-align: start;
+    font-size: 10px;
 }
 
-.fier_sub h5 {
-    width: 100px;
-    text-align: start;
-}
 
-.fier_sub p {
-    width: 10px;
-    text-align: start;
-}
 
 #mangSlide .mang_list {
-    width: 100%;
+    width: 1020px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -520,8 +514,6 @@ footer {
 .container {
     width: 1030px;
     height: auto;
-    border-top: solid #999 1px;
-    border-bottom: solid #999 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -534,6 +526,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: solid #999 1px;
     border-bottom: solid 1px #999;
 
     a {
