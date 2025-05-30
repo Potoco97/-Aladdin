@@ -10,7 +10,7 @@ ul, ol {
   list-style: none;
 }
 
-.top a {
+.top li {
   text-decoration: none;
   color: #fff;
 }
@@ -64,6 +64,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 .top .container {
   display: flex;
@@ -79,6 +81,9 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 75%;
+}
+.top .mainmanu li:hover {
+  cursor: pointer;
 }
 .top .member {
   width: 25%;
@@ -102,16 +107,16 @@ header {
   width: 90%;
   display: flex;
   align-items: center;
-  color: #999;
+  color: #4982ce;
   font-size: 30%;
 }
 
-.searchcing a {
-  width: 11%;
+.searchcing:hover {
+  cursor: pointer;
 }
 
 .search {
-  width: 100%;
+  width: 50%;
   height: 40px;
   padding-left: 15px;
   padding-right: 15px;

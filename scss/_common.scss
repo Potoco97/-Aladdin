@@ -24,6 +24,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
+    color: #fff;
+
+
 
     .container {
         display: flex;
@@ -32,6 +36,7 @@ header {
         font-weight: 700;
         margin: none;
     }
+
 
     .mainmanu {
         width: 52%;
@@ -43,7 +48,10 @@ header {
         font-size: 75%;
     }
 
-    
+    .mainmanu li:hover {
+        cursor: pointer;
+    }
+
     .member {
         width: 25%;
         height: 100%;
@@ -68,17 +76,16 @@ header {
     width: 90%;
     display: flex;
     align-items: center;
-    color: #999;
+    color: #4982ce;
     font-size: 30%;
 }
 
-
-.searchcing a{
-    width: 11%;
+.searchcing:hover {
+    cursor: pointer;
 }
 
 .search {
-    width: 100%;
+    width: 50%;
     height: 40px;
     padding-left: 15px;
     padding-right: 15px;
@@ -420,7 +427,7 @@ header {
 
 }
 
-.fier_sub h5{
+.fier_sub h5 {
     width: 100%;
     display: flex;
     justify-content: space-between;
