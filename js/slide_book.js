@@ -205,7 +205,7 @@ async function magicSlide() {
 
 async function fierSlide() {
     try {
-        const data = await fetchBooks('화제');
+        const data = await fetchBooks('EBS');
 
         const origin = data.documents;
         let book = origin.filter((val) => {
