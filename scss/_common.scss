@@ -235,9 +235,6 @@ header {
 
         }
 
-        .mWSbook a {
-            color: #000;
-        }
 
         .mWSbook h5 {
             font-size: 12px;
@@ -312,6 +309,9 @@ header {
 
 .not img {
     width: 280px;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: solid 1px #dadada
 }
 

@@ -15,11 +15,6 @@ ul, ol {
   font-weight: 700;
 }
 
-.bottomleft a {
-  text-decoration: none;
-  color: #257fa8;
-}
-
 .bottomleft li:nth-of-type(2) {
   color: #8f2323;
 }
@@ -226,9 +221,6 @@ header {
   text-align: center;
   line-height: 20px;
 }
-#mainWindow .mWslide .mWSbook a {
-  color: #000;
-}
 #mainWindow .mWslide .mWSbook h5 {
   font-size: 12px;
 }
@@ -294,6 +286,9 @@ header {
 
 .not img {
   width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: solid 1px #dadada;
 }
 
