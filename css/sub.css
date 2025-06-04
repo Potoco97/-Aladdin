@@ -633,11 +633,9 @@ li {
 }
 
 header {
-  width: 1400px;
+  width: 100%;
   height: 150px;
   margin: 0 auto;
-  border: 1px solid #eee;
-  border-radius: 30px;
   padding: 10px;
 }
 
@@ -647,7 +645,7 @@ h1 a {
 }
 
 section {
-  width: 1400px;
+  width: 100%;
   height: 1700px;
   margin: 30px auto 0 auto;
   border: 1px solid red;
@@ -686,28 +684,65 @@ section h3 {
   text-align: left;
 }
 
-table {
-  width: 700px;
-  border-top: 3px solid #e9e9e9;
-  float: right;
-  border-bottom: 1px solid #e9e9e9;
-  margin: 150px 150px 0 0px;
-  color: #666;
-}
-
 #mainstart {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   margin-top: 30px;
   background-color: rgb(255, 225, 225);
 }
-#mainstart .container {
-  width: 1030px;
-  height: 100%;
-  background-color: #fff;
+#mainstart .container .container1 {
+  width: 850px;
+  height: 13%;
+  line-height: 50px;
+  border-bottom: solid #d1d1d1 2px;
 }
-#mainstart .container li {
-  font-size: 11px;
+#mainstart .container .container1 .borderbox {
+  width: 65px;
+  height: 20px;
+  font-size: 12px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  float: left;
+  border: solid 1px #d1d1d1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#mainstart .container .container1 .borderbox1 {
+  width: 65px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px #d1d1d1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#mainstart .container .container1 .title {
+  font-size: 25px;
+  font-weight: 550;
+}
+#mainstart .container .container1 .Bootitle {
+  font-size: 14px;
+}
+#mainstart .container .container1 #mainboog {
+  width: 850px;
+  height: 100%;
+  background-color: aqua;
+}
+#mainstart .container .container1 #mainboog .container {
+  width: 100%;
+  height: 500px;
+  background-color: aquamarine;
+}
+#mainstart .container .container1 #mainboog .container .mainboog1 {
+  width: 20%;
+  height: 500px;
+  background-color: red;
+}
+#mainstart .container .container1 #mainboog .container .mainboog2 {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(17, 0, 255);
 }
