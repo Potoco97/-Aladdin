@@ -685,7 +685,7 @@ section h3 {
 }
 
 #mainstart {
-  width: 100%;
+  width: 850px;
   height: 100%;
   margin-top: 30px;
   background-color: rgb(255, 225, 225);
@@ -726,23 +726,19 @@ section h3 {
 #mainstart .container .container1 .Bootitle {
   font-size: 14px;
 }
-#mainstart .container .container1 #mainboog {
+
+.mocontainer {
   width: 850px;
-  height: 100%;
-  background-color: aqua;
-}
-#mainstart .container .container1 #mainboog .container {
-  width: 100%;
   height: 500px;
   background-color: aquamarine;
 }
-#mainstart .container .container1 #mainboog .container .mainboog1 {
+.mocontainer .mainboog1 {
   width: 20%;
   height: 500px;
   background-color: red;
 }
-#mainstart .container .container1 #mainboog .container .mainboog2 {
+.mocontainer .mainboog2 {
   width: 80%;
-  height: 100%;
+  height: 100px;
   background-color: rgb(17, 0, 255);
 }

@@ -62,11 +62,12 @@ section h3 {
 //------------메인보드------------//
 
 #mainstart {
-    width: 100%;
+    width: 850px;
     height: 100%;
     margin-top: 30px;
     background-color: rgb(255, 225, 225);
 
+    
     .container {
         .container1 {
             width: 850px;
@@ -106,35 +107,27 @@ section h3 {
 
             .Bootitle {
                 font-size: 14px;
-
-            }
-
-            #mainboog {
-                width: 850px;
-                height: 100%;
-                background-color: aqua;
-
-
-                .container {
-                    width: 100%;
-                    height: 500px;
-                    background-color: aquamarine;
-                    
-                    .mainboog1 {
-                        width: 20%;
-                        height: 500px;
-                        background-color: red;
-                    }
-                    
-                    .mainboog2 {
-                        width: 80%;
-                        height: 100%;
-                        background-color: rgb(17, 0, 255); 
-                    }
-
-                }
             }
         }
-
     }
+
+}
+
+.mocontainer {
+    width: 850px;
+    height: 500px;
+    background-color: aquamarine;
+
+    .mainboog1 {
+        width: 20%;
+        height: 500px;
+        background-color: red;
+    }
+
+    .mainboog2 {
+        width: 80%;
+        height: 100px;
+        background-color: rgb(17, 0, 255);
+    }
+
 }
