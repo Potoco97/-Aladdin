@@ -64,16 +64,17 @@ section h3 {
 #mainstart {
     width: 850px;
     height: 100%;
+    margin: 0 auto;
     margin-top: 30px;
-    background-color: rgb(255, 225, 225);
+    // background-color: rgb(255, 225, 225);
 
-    
+
     .container {
         .container1 {
-            width: 850px;
+            width: 100%;
             height: 13%;
             line-height: 50px;
-            border-bottom: solid #d1d1d1 2px;
+
 
             .borderbox {
                 width: 65px;
@@ -87,6 +88,7 @@ section h3 {
                 border-radius: 4px;
                 cursor: pointer;
             }
+
 
             .borderbox1 {
                 width: 65px;
@@ -106,28 +108,165 @@ section h3 {
             }
 
             .Bootitle {
+                width: 82.5%;
                 font-size: 14px;
+                padding-bottom: 8px;
+                border-bottom: solid #d1d1d1 2px;
             }
         }
     }
 
 }
 
-.mocontainer {
-    width: 850px;
-    height: 500px;
-    background-color: aquamarine;
+* {
+    box-sizing: border-box;
+}
 
-    .mainboog1 {
-        width: 20%;
-        height: 500px;
-        background-color: red;
+.table0 img{
+    width: 40%;
+    background-color: #b60b82;
+    
+}
+
+.table1 {
+    width: 70%;
+    margin-top: -35%;
+    background-color: #b3b3b3;
+    float: right;
+}
+
+.table1 td {
+    padding: 6px 15px;
+}
+
+.table1 td:nth-of-type(1) {
+    padding: 0
+}
+
+.table1 td:first-child {
+    width: 120px;
+}
+
+.panm {
+    font-size: 25px;
+    color: #b60b82;
+}
+
+.panm span {
+    font-size: 15px;
+    color: #000;
+}
+
+.panm1 span {
+    font-size: 17px;
+    color: #b60b82;
+    font-weight: 900;
+}
+
+.b1 {
+    color: #b60b82;
+}
+
+button {
+    margin: 3px;
+    cursor: pointer;
+}
+
+button:first-child {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ce0d94;
+    border-radius: 1px;
+    color: #fff;
+    border: none;
+}
+
+button:first-child:hover {
+    background-color: #b60b82;
+}
+
+button:nth-child(2) {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #e21c1c;
+    border-radius: 1px;
+    color: #fff;
+    border: none;
+}
+
+button:nth-child(2):hover {
+    background-color: #c21717;
+}
+
+button:nth-child(3) {
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 1px;
+    color: #ce0d94;
+    border: none;
+    border: 1px solid #ce0d94;
+}
+
+button:nth-child(3):hover {
+    background-color: #f3f3f3;
+}
+
+button:nth-child(4) {
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 1px;
+    color: #ce0d94;
+    border: none;
+    border: 1px solid #ce0d94;
+}
+
+button:nth-child(4):hover {
+    background-color: #f3f3f3;
+}
+
+select {
+    width: 80px;
+    height: 45px;
+    margin: 5px 0 0 0px;
+    font-family: "돋움";
+    font-size: 17px;
+    font-weight: 900;
+    color: #666;
+    border: 1px solid #eee;
+    padding: 0px 0 0 10px;
+}
+
+table h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+table p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.table2 {
+    width: 400px;
+    border-spacing: 0;
+    border: 1px solid #dedcdc;
+
+    td {
+        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 6px 15px;
     }
 
-    .mainboog2 {
-        width: 80%;
-        height: 100px;
-        background-color: rgb(17, 0, 255);
+    select {
+        width: 50px;
     }
-
 }
