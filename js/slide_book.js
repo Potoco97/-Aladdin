@@ -276,6 +276,8 @@ async function lastSlide() {
     }
 }
 
+
+
 mWSbook();
 notice();
 hanSlide();
