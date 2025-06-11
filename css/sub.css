@@ -907,6 +907,7 @@ table p {
   height: 440px;
   margin-top: 40px;
   float: right;
+  border-bottom: #999 1px solid;
 }
 .txtmamog .mamoge1 #tmpBox {
   width: 100%;
@@ -958,6 +959,7 @@ table p {
   margin: 0 auto;
   float: left;
   color: #000;
+  border-bottom: solid 1px #999;
 }
 .txtmamog_a .mamoge1_a #tmpBox_a p {
   font-size: 15px;
@@ -975,6 +977,7 @@ table p {
   font-size: 21px;
   font-weight: 500;
   float: left;
+  margin-top: 40px;
 }
 .txtmamog_b .mamoge1_b {
   width: 75%;
@@ -992,4 +995,88 @@ table p {
 .txtmamog_b .mamoge1_b #tmpBox_b p {
   font-size: 15px;
   margin-bottom: 33px;
+}
+.txtmamog_b .mamoge1_b #tmpBox_b p:nth-of-type(3) {
+  border-bottom: solid 1px #999;
+  padding-bottom: 40px;
+}
+
+.txtmamog_c {
+  width: 950px;
+  height: 100%;
+  margin: 0 auto;
+}
+.txtmamog_c img {
+  margin-bottom: 42px;
+  margin-top: -48px;
+}
+.txtmamog_c h4 {
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+.txtmamog_c p {
+  line-height: 1.8;
+}
+.txtmamog_c span {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+.txtmamog_c .mamoge_c {
+  width: 25%;
+  height: 100%;
+  font-size: 21px;
+  font-weight: 500;
+}
+.txtmamog_c .mamoge1_c {
+  width: 75%;
+  height: 100%;
+  margin-top: 40px;
+  float: right;
+}
+.txtmamog_c .mamoge1_c #tmpBox_c {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-top: -60px;
+  float: left;
+  color: #000;
+}
+.txtmamog_c .mamoge1_c #tmpBox_c p {
+  font-size: 15px;
+  margin-bottom: 33px;
+}
+
+#mainWind1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mainWind1 .container1 {
+  width: 1030px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #999;
+}
+#mainWind1 .container1 h3 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+#mainWind1 .container1 #mangSlide1 .mang_list1 {
+  width: 1020px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  float: left;
+  text-align: center;
 }

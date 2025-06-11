@@ -60,11 +60,11 @@ async function mWSbook() {
 
             for (let j = 0; j < 4; j++) {
                 $('.mWSbook li').eq(i).append(`
-                    <div class="box">
-                        <img src="${book[j].thumbnail}">
-                        <h5>${book[j].title}</h5>
-                        <p>${book[j].authors[0]}</p>
-                    </div>
+                <div class="box">
+                    <img src="${book[j].thumbnail}">
+                    <h5>${book[j].title}</h5>
+                    <p>${book[j].authors[0]}</p>
+                </div>
                 `);
             }
         })
@@ -277,7 +277,6 @@ async function lastSlide() {
 }
 
 
-
 mWSbook();
 notice();
 hanSlide();
@@ -285,3 +284,4 @@ magicSlide();
 fierSlide();
 mangSlide();
 lastSlide();
+
