@@ -1067,8 +1067,9 @@ table p {
   border-top: solid 1px #999;
 }
 #mainWind1 .container1 h3 {
-  font-size: 25px;
+  font-size: 19px;
   margin-bottom: 40px;
+  font-weight: 500;
 }
 #mainWind1 .container1 #mangSlide1 .mang_list1 {
   width: 1020px;
@@ -1079,4 +1080,5 @@ table p {
   padding: 10px;
   float: left;
   text-align: center;
+  cursor: pointer;
 }

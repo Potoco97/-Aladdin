@@ -513,8 +513,9 @@ table p {
         border-top: solid 1px #999;
 
         h3 {
-            font-size: 25px;
+            font-size: 19px;
             margin-bottom: 40px;
+            font-weight: 500;
         }
 
         #mangSlide1 .mang_list1 {
@@ -526,6 +527,7 @@ table p {
             padding: 10px;
             float: left;
             text-align: center;
+            cursor: pointer;
         }
 
     }
